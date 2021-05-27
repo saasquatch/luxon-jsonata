@@ -41,6 +41,7 @@ const expr = jsonata(
 );
 
 addLuxon(expr);
+expr.assign("double", double);
 
 console.log(expr.evaluate({}));
 
