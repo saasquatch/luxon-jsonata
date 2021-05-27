@@ -2,15 +2,11 @@
   "name": "luxon-jsonata",
   "version": "0.0.1-3",
   "description": "A suite of functions implementing the Luxon API for use in JSONata expressions",
-  "type": "module",
-  "files": [
-    "dist/"
-  ],
-  "source": "./src/main.ts",
-  "exports": "./dist/luxon-jsonata.modern.js",
-  "main": "./dist/luxon-jsonata.cjs",
-  "module": "./dist/luxon-jsonata.module.js",
-  "unpkg": "./dist/luxon-jsonata.umd.js",
+  "files": ["dist/"],
+  "source": "src/main.ts",
+  "main": "dist/luxon-jsonata.js",
+  "module": "dist/luxon-jsonata.module.js",
+  "unpkg": "dist/luxon-jsonata.umd.js",
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch",
@@ -21,10 +17,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/saasquatch/luxon-jsonata.git"
   },
-  "keywords": [
-    "luxon",
-    "jsonata"
-  ],
+  "keywords": ["luxon", "jsonata"],
   "author": "Johan Venter <johan@saasquatch.com>",
   "license": "MIT",
   "bugs": {
