@@ -11,8 +11,14 @@ function getProperties(clazz: { [key: string]: any }) {
 }
 
 export default function addLuxon(jsonata: Expression) {
-  if (!jsonata || !jsonata.hasOwnProperty("registerFunction")) {
-    return;
+  if (
+    !jsonata ||
+    !jsonata.hasOwnProperty("assign") ||
+    !(typeof jsonata.assign === "function")
+  ) {
+    throw new Error(
+      "`jsonata` doesn't appear to be a valid JSONata expression object"
+    );
   }
 
   jsonata.assign("DateTime", getProperties(DateTime));
