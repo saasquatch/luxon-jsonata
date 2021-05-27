@@ -7,8 +7,8 @@
   <a href="https://www.npmjs.com/package/luxon-jsonata"><img src="https://img.shields.io/npm/dm/luxon-jsonata.svg?style=flat-square" alt="NPM downloads"/> </a>
 </p>
 
-[JSONata] (https://jsonata.org) is a great tool for transforming JSON data, but the date and time manipulation functions that it provides
-are lacklustre. This package adds a simple binding for [Luxon's] (https://moment.github.io/luxon/) `DateTime` and `Duration` objects so they can be
+[JSONata](https://jsonata.org) is a great tool for transforming JSON data, but the date and time manipulation functions that it provides
+are lacklustre. This package adds a simple binding for [Luxon's](https://moment.github.io/luxon/) `DateTime` and `Duration` objects so they can be
 used directly in JSONata expressions.
 
 ## Getting Started
@@ -17,7 +17,7 @@ TODO
 
 ## Supporters
 
-This package is supported by [SaaSquatch] (https://saasquatch.com).
+This package is supported by [SaaSquatch](https://saasquatch.com).
 
 ## License
 
