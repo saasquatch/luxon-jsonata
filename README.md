@@ -23,9 +23,28 @@ const expr = jsonata(
 
 addLuxon(expr);
 
-console.log(expr.evaluate());
+console.log(expr.evaluate({}));
 
 // Result is "P5M10D"
+```
+
+## Caveats
+
+Luxon member functions that themselves take functions, like `Duration.mapUnits` are a bit awkward to use as you need to
+assign a Javascript function to the expression that takes the object and performs the operation you need:
+
+```ts
+const double = (x: Duration) => x.mapUnits((u) => u * 2);
+
+const expr = jsonata(
+  "$double($Duration.fromObject({ 'hours': 1, 'minutes': 30 })).toObject()"
+);
+
+addLuxon(expr);
+
+console.log(expr.evaluate({}));
+
+// Result is { hours: 2, minutes: 60 }
 ```
 
 ## Supporters
