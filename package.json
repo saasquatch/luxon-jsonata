@@ -2,10 +2,9 @@
   "name": "luxon-jsonata",
   "version": "0.0.1-4",
   "description": "A suite of functions implementing the Luxon API for use in JSONata expressions",
-  "files": [
-    "dist/"
-  ],
+  "files": ["dist/"],
   "source": "src/main.ts",
+  "types": "dist/main.d.ts",
   "main": "dist/luxon-jsonata.js",
   "module": "dist/luxon-jsonata.module.js",
   "unpkg": "dist/luxon-jsonata.umd.js",
@@ -19,10 +18,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/saasquatch/luxon-jsonata.git"
   },
-  "keywords": [
-    "luxon",
-    "jsonata"
-  ],
+  "keywords": ["luxon", "jsonata"],
   "author": "Johan Venter <johan@saasquatch.com>",
   "license": "MIT",
   "bugs": {
