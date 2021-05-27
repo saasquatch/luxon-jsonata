@@ -13,7 +13,20 @@ used directly in JSONata expressions.
 
 ## Getting Started
 
-TODO
+```ts
+import addLuxon from "luxon-jsonata";
+import jsonata from "jsonata";
+
+const expr = jsonata(
+  '$Duration.fromISO("P2M").plus({"months":3, "days":10}).toISO()'
+);
+
+addLuxon(expr);
+
+console.log(expr.evaluate());
+
+// Result is "P5M10D"
+```
 
 ## Supporters
 
