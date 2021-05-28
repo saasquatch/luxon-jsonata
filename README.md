@@ -8,7 +8,7 @@
 </p>
 
 [JSONata](https://jsonata.org) is a great tool for transforming JSON data, but the date and time manipulation functions that it provides
-are lacklustre. This package adds a simple binding for [Luxon's](https://moment.github.io/luxon/) `DateTime` and `Duration` objects so they can be
+are lacklustre. This package adds a simple binding for [Luxon's](https://moment.github.io/luxon/) `DateTime`, `Duration` and `Interval` objects so they can be
 used directly in JSONata expressions.
 
 ## Getting Started
@@ -30,8 +30,11 @@ console.log(expr.evaluate({}));
 
 ## Caveats
 
-Luxon member functions that themselves take functions, like `Duration.mapUnits` are a bit awkward to use as you need to
-assign a Javascript function to the expression that takes the object and performs the operation you need:
+Not all methods are going to work. In particular, methods that themselves take functions, or require a standard Date
+object are a bit awkward to use in JSONata. Perhaps in future we can dynamically remove these from the bound objects.
+
+For Luxon member functions that themselves take functions, like `Duration.mapUnits`, you can assign a Javascript
+function to the expression that takes the object and performs the operation you need:
 
 ```ts
 const double = (x: Duration) => x.mapUnits((u) => u * 2);

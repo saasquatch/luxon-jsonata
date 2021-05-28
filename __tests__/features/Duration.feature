@@ -1,5 +1,9 @@
 Feature: Duration
 
+    The goal of these tests is to confirm that most of the common operations on a Duration
+    can be performed within a JSONata expression. They are not exhaustive on all the functionality
+    of the Duration object, but give reasonable assurance that most things will work.
+
     Scenario Outline: Durations can be constructed with fromISO
         Given a JSONata expression <expr>
         When the expression is evaluated

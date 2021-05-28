@@ -1,4 +1,4 @@
-import { DateTime, Duration } from "luxon";
+import { DateTime, Duration, Interval } from "luxon";
 import { Expression } from "jsonata";
 
 function getProperties(clazz: { [key: string]: any }) {
@@ -23,4 +23,5 @@ export default function addLuxon(jsonata: Expression) {
 
   jsonata.assign("DateTime", getProperties(DateTime));
   jsonata.assign("Duration", getProperties(Duration));
+  jsonata.assign("Interval", getProperties(Interval));
 }
