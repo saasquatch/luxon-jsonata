@@ -1,6 +1,6 @@
 {
   "name": "luxon-jsonata",
-  "version": "0.0.1-5",
+  "version": "1.0.0",
   "description": "A suite of functions implementing the Luxon API for use in JSONata expressions",
   "files": [
     "dist/"
