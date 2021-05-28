@@ -1,10 +1,8 @@
 {
   "name": "luxon-jsonata",
   "version": "1.0.0",
-  "description": "A suite of functions implementing the Luxon API for use in JSONata expressions",
-  "files": [
-    "dist/"
-  ],
+  "description": "Simple Luxon object bindings for JSONata",
+  "files": ["dist/"],
   "source": "src/main.ts",
   "types": "dist/main.d.ts",
   "main": "dist/luxon-jsonata.js",
@@ -20,10 +18,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/saasquatch/luxon-jsonata.git"
   },
-  "keywords": [
-    "luxon",
-    "jsonata"
-  ],
+  "keywords": ["luxon", "jsonata"],
   "author": "Johan Venter <johan@saasquatch.com>",
   "license": "MIT",
   "bugs": {
