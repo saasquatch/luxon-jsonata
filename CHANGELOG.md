@@ -19,4 +19,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [unreleased]: https://github.com/sasquatch/luxon-jsonata/compare/v0.0.2...HEAD
 [0.0.2]: https://github.com/sasquatch/luxon-jsonata/releases/tag/v0.0.2
-[0.0.1]: https://github.com/sasquatch/luxon-jsonata/releases/tag/v0.0.1
