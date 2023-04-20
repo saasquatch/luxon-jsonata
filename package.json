@@ -1,6 +1,6 @@
 {
   "name": "luxon-jsonata",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple Luxon object bindings for JSONata",
   "files": ["dist/"],
   "source": "src/main.ts",
@@ -19,7 +19,7 @@
     "url": "git+ssh://git@github.com/saasquatch/luxon-jsonata.git"
   },
   "keywords": ["luxon", "jsonata"],
-  "author": "Johan Venter <johan@saasquatch.com>",
+  "author": "ReferralSaaSquatch.com, Inc.",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/saasquatch/luxon-jsonata/issues"
